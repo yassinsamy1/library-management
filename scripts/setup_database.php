@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Schema\Blueprint;
@@ -8,14 +8,14 @@ use Illuminate\Database\Schema\Blueprint;
 $capsule = new Capsule;
 $capsule->addConnection([
     'driver' => 'sqlite',
-    'database' => __DIR__ . '/database/library.sqlite',
+    'database' => __DIR__ . '/../database/library.sqlite',
     'prefix' => '',
 ]);
 
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
 
-$dbPath = __DIR__ . '/database/library.sqlite';
+$dbPath = __DIR__ . '/../database/library.sqlite';
 if (!file_exists($dbPath)) {
     touch($dbPath);
 }

@@ -25,12 +25,12 @@ A simple and efficient Library Management System built with Laravel framework us
 1. Clone the repository
 ```bash
 git clone <your-repo-url>
-cd Dev_php
+cd library-management
 ```
 
 2. Set up the database
 ```bash
-php setup_database.php
+php scripts/setup_database.php
 ```
 
 ## API Endpoints
@@ -64,6 +64,8 @@ php setup_database.php
 │   ├── migrations/      # Database schema
 │   ├── factories/       # Model factories
 │   └── seeders/         # Sample data
+├── scripts/
+│   └── setup_database.php # Database setup script
 └── routes/api.php       # API routes
 ```
 
