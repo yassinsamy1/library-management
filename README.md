@@ -56,17 +56,17 @@ php scripts/setup_database.php
 
 ```
 ├── app/
-│   ├── Models/          # Eloquent models
-│   ├── Http/Controllers/ # API controllers
-│   ├── Http/Requests/   # Form validation
-│   └── Enums/           # Book status enum
+│   ├── Models/
+│   ├── Http/Controllers/
+│   ├── Http/Requests/
+│   └── Enums/
 ├── database/
-│   ├── migrations/      # Database schema
-│   ├── factories/       # Model factories
-│   └── seeders/         # Sample data
+│   ├── migrations/
+│   ├── factories/
+│   └── seeders/
 ├── scripts/
-│   └── setup_database.php # Database setup script
-└── routes/api.php       # API routes
+│   └── setup_database.php
+└── routes/api.php
 ```
 
 ## Models
